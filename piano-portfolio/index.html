@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Piano Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#000000',
+              surface: '#121212',
+              primary: '#22c55e', // Stock Green
+              loss: '#ef4444',    // Stock Red
+            },
+            fontFamily: { sans: ['-apple-system', 'BlinkMacSystemFont', 'Inter', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #000000; color: white; -webkit-tap-highlight-color: transparent; }
+      /* Hide Scrollbar */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
